@@ -2,10 +2,10 @@
 #include <stdlib.h>
 int main(){
            FILE *fptr;
-           fptr=fopen('index.txt','w');
+           fptr=fopen("index.txt","w");
            if(fptr==NULL)
            {
-              print("ERROR");
+              printf("ERROR");
               exit(1);
            }
            int num;
