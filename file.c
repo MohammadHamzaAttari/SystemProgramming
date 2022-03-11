@@ -2,15 +2,15 @@
 #include <stdlib.h>
 int main(){
            FILE *fptr;
-           fptr=fopen("index.txt","w");
-           if(fptr==NULL)
+          if(( fptr=fopen("index.txt","r"))==NULL)//reading the content in file
+       
            {
               printf("ERROR");
               exit(1);
            }
            int num;
-           printf("Enter a number");
-           scanf("%d",&num);
-           fprintf(fptr,"%d",num);
+          
+           fscanf(fptr,"%d",&num);
+           printf("%d",num);
            fclose(fptr);
 }
